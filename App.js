@@ -6,13 +6,7 @@ import {
       useFonts,
       Montserrat_400Regular,
       Montserrat_700Bold
-    } from '@expo-google-fonts/montserrat' ;
-
-import {
-      useFonts,
-      Cinzel_400Regular,
-      Cinzel_700Bold
-    } from '@expo-google-fonts/cinzel' ;
+    } from '@expo-google-fonts/montserrat';
 
 
 export default function App() {
@@ -21,24 +15,14 @@ const [fontCarregada] = useFonts({
   "MontserratBold": Montserrat_700Bold
 });
 
-const [fontCarregada2] = useFonts({
-  "CinzelRegular": Cinzel_400Regular,
-  "CinzelBold": Cinzel_700Bold
-});
-
 if(!fontCarregada){
-  return <h1>Naõa</h1>
+  return <h1>Não carregou</h1>
 }
-
-if(!fontCarregada2){
-  return<View />
-}
-
 
   return (
     <SafeAreaView>
       <Cesta />
+
     </SafeAreaView>
   );
 }
-

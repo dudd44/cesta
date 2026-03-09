@@ -1,12 +1,12 @@
 import react from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, Text } from "react-native";
 
 export default function Texto(children,style){
     let estilo = estilos.texto;
 
     if(style?.fontWeight === 'bold'){
     }
-    return <Text style={[style,estilo]}>{children}</Text>
+    return <Text style={[style, estilo]}>{children}</Text>
 }
 
 const estilos = StyleSheet.create({
